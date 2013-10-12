@@ -37,7 +37,7 @@ public class Json2Dynamo {
 		init();
 
 		try {
-			String tableName = "t_document1";
+			String tableName = args[0];
 
 			BufferedReader br = new BufferedReader(new FileReader("jsondb/"+tableName
 					+ ".json"));

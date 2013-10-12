@@ -29,7 +29,7 @@ public class Dynamo2Json {
         init();
 
         try {
-            String tableName = "t_document";
+            String tableName = args[0];
 
             ScanRequest scanRequest = new ScanRequest(tableName);
             ScanResult scanResult = dynamoDB.scan(scanRequest);
